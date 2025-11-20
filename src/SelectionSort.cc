@@ -8,11 +8,8 @@
 #include "MYheader.h"
 using namespace std;
 
-void selection(long data[],long  w[], long size){
-	//move values from data into wData
-	for(int i = 0; i < size; i++){
-		w[i] = data[i];
-	}
+void selection(long  w[], long size){
+
 
 
 	//swap lowest value with the first value starting at index 0

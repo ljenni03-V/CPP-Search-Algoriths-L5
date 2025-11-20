@@ -37,11 +37,8 @@ void moveDown(long arr[], int size, int index){
 
 }
 
-void heap(long data[], long w[], int size){
-	//transfer values from input txt to wData array
-	for(int i = 0; i < size; i++){
-		w[i] = data[i];
-	}
+void heap( long w[], int size){
+
 
 	//create the heap
 	for(int i = size/2 - 1; i >= 0; i--){

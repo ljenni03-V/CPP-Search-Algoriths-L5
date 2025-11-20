@@ -32,7 +32,7 @@ int main() {
 
 					ifilename = "lab5_input.txt";
 					sz = readfile(ifilename, data);
-
+					sz= sz/2;
 					if (sz < 0)	 {
 						 cerr << endl << "ERROR: Input File Not Found or File cannot be opened." <<endl;
 						 cerr << "       Please check that the file exists, its path, and try again!" << endl << endl;
@@ -47,6 +47,7 @@ int main() {
                     // First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
 						ifilename = "lab5_input.txt";
 						 sz = readfile(ifilename, data);
+						 sz= sz/2;
 						if (sz < 0)	 {
 							cerr << endl << "ERROR: Input File Not Found or File cannot be opened." <<endl;
 							cerr << "       Please check that the file exists, its path, and try again!" << endl << endl;
@@ -56,7 +57,6 @@ int main() {
 						for (int i = 0; i<sz; ++i){
 							wData[i] = data[i];
 						}
-						printarray(wData,sz);
 					}
 
 
@@ -67,7 +67,7 @@ int main() {
 			        //  Note that 'wData' is of size 'sz' (see case 1).
 
 					end_time = clock();		// end cpu timer
-					printarray(wData,sz);
+
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
 					cout << endl << "(A)Sort ran for " << cpu_time_used << " secs.";
 
@@ -88,6 +88,7 @@ int main() {
 			        // First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
 				ifilename = "lab5_input.txt";
 				sz = readfile(ifilename, data);
+				sz= sz/2;
 				if (sz < 0)	 {
 					cerr << endl << "ERROR: Input File Not Found or File cannot be opened." <<endl;
 					cerr << "       Please check that the file exists, its path, and try again!" << endl << endl;
@@ -97,7 +98,7 @@ int main() {
 				for (int i = 0; i<sz; ++i){
 					wData[i] = data[i];
 					}
-				printarray(data,sz);
+
 					}
 
 					//begin_time = clock();   // start cpu timer
@@ -108,7 +109,7 @@ int main() {
 					// Call your Sort function B here to sort the array 'wData'
 			        //  Note that 'wDdata' is of size 'sz' (see case 1).
 					countingsort(wData, sz);
-					printarray(wData, sz);
+
 
 					end_time = clock();		// end cpu timer
 
@@ -133,6 +134,7 @@ int main() {
 						        // First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
 				ifilename = "lab5_input.txt";
 				sz = readfile(ifilename, data);
+				sz= sz/2;
 				if (sz < 0)	 {
 					cerr << endl << "ERROR: Input File Not Found or File cannot be opened." <<endl;
 					cerr << "       Please check that the file exists, its path, and try again!" << endl << endl;
@@ -143,7 +145,7 @@ int main() {
 						wData[i] = data[i];
 						}
 
-				printarray(wData, sz);
+
 								}
 
 								//begin_time = clock();   // start cpu timer
@@ -157,7 +159,7 @@ int main() {
 
 
 				end_time = clock();		// end cpu timer
-				printarray(wData, sz);
+
 				cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
 				cout << endl << "(C)Sort ran for " << cpu_time_used << " secs.";
 
@@ -177,6 +179,7 @@ int main() {
 								// First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
 				ifilename = "lab5_input.txt";
 				sz = readfile(ifilename, data);
+				sz= sz/2;
 				if (sz < 0)	 {
 					cerr << endl << "ERROR: Input File Not Found or File cannot be opened." <<endl;
 					cerr << "       Please check that the file exists, its path, and try again!" << endl << endl;
@@ -186,7 +189,7 @@ int main() {
 					for (int i = 0; i<sz; ++i){
 						wData[i] = data[i];
 						}
-				printarray(wData, sz);
+
 								}
 
 								//begin_time = clock();   // start cpu timer
@@ -200,7 +203,7 @@ int main() {
 
 
 				end_time = clock();		// end cpu timer
-				printarray(wData, sz);
+
 				cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
 				cout << endl << "(D)Sort ran for " << cpu_time_used << " secs.";
 
@@ -218,8 +221,9 @@ int main() {
 			case 6: // Sort function E- selection sort
 
 								// First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
-				ifilename = "INPUT5.txt";
+				ifilename = "lab5_input.txt";
 				sz = readfile(ifilename, data);
+				sz= sz/2;
 				if (sz < 0)	 {
 					cerr << endl << "ERROR: Input File Not Found or File cannot be opened." <<endl;
 					cerr << "       Please check that the file exists, its path, and try again!" << endl << endl;
@@ -229,7 +233,7 @@ int main() {
 					for (int i = 0; i<sz; ++i){
 						wData[i] = data[i];
 						}
-				printarray(wData, sz);
+
 								}
 
 								//begin_time = clock();   // start cpu timer
@@ -239,15 +243,15 @@ int main() {
 
 								// Call your Sort function B here to sort the array 'wData'
 								//  Note that 'wDdata' is of size 'sz' (see case 1).
-				selection(data, wData, sz);
+				selection( wData, sz);
 
 
 				end_time = clock();		// end cpu timer
-				printarray(wData, sz);
+
 				cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
 				cout << endl << "(D)Sort ran for " << cpu_time_used << " secs.";
 
-				ofilename = "OUTPUT5.txt";
+				ofilename = "lab5_output.txt";
 				writefile(wData, sz, ofilename);
 
 				if (sz < 0)	 {
@@ -258,6 +262,50 @@ int main() {
 				else cout << endl << "Output written to " << ofilename << endl;
 
 					break;
+			case 7: // Sort function E- selection sort
+
+											// First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
+			ifilename = "lab5_input.txt";
+							sz = readfile(ifilename, data);
+							sz= sz/2;
+							if (sz < 0)	 {
+								cerr << endl << "ERROR: Input File Not Found or File cannot be opened." <<endl;
+								cerr << "       Please check that the file exists, its path, and try again!" << endl << endl;
+								return 0;
+							}
+							else {
+								for (int i = 0; i<sz; ++i){
+									wData[i] = data[i];
+									}
+
+											}
+
+											//begin_time = clock();   // start cpu timer
+
+
+							begin_time = clock();   // start cpu timer
+
+											// Call your Sort function B here to sort the array 'wData'
+											//  Note that 'wDdata' is of size 'sz' (see case 1).
+							heap( wData, sz);
+
+
+							end_time = clock();		// end cpu timer
+
+							cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
+							cout << endl << "(D)Sort ran for " << cpu_time_used << " secs.";
+
+							ofilename = "lab5_output.txt";
+							writefile(wData, sz, ofilename);
+
+							if (sz < 0)	 {
+								cerr << endl << "ERROR: Output File could not be opened." <<endl;
+								cerr << "       Quitting Now!" << endl << endl;
+								return 0;
+							}
+							else cout << endl << "Output written to " << ofilename << endl;
+
+								break;
 
 			case 0: // Exit Program
 

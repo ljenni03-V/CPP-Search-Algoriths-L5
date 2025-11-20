@@ -31,8 +31,8 @@ void quicksort(long data[], long size);
 
 void    bubblesort(long data[], long size);
 void    quicksort(long data[], long size);
-void selection(long data[], long w[], long size);
+void selection( long w[], long size);
 void moveDown(long arr[], int size, int index);
-void heap(long data[], long w[], int size);
+void heap( long w[], int size);
 
 #endif /* MYHEADER_H_ */
