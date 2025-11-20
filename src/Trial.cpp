@@ -142,7 +142,7 @@ int main() {
 					for (int i = 0; i<sz; ++i){
 						wData[i] = data[i];
 						}
-				printarray(data,sz);
+
 				printarray(wData, sz);
 								}
 
@@ -154,10 +154,10 @@ int main() {
 								// Call your Sort function B here to sort the array 'wData'
 						        //  Note that 'wDdata' is of size 'sz' (see case 1).
 				bubblesort(wData, sz);
-				printarray(wData, sz);
+
 
 				end_time = clock();		// end cpu timer
-
+				printarray(wData, sz);
 				cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
 				cout << endl << "(C)Sort ran for " << cpu_time_used << " secs.";
 
@@ -186,7 +186,6 @@ int main() {
 					for (int i = 0; i<sz; ++i){
 						wData[i] = data[i];
 						}
-				printarray(data,sz);
 				printarray(wData, sz);
 								}
 
@@ -198,10 +197,10 @@ int main() {
 								// Call your Sort function B here to sort the array 'wData'
 								//  Note that 'wDdata' is of size 'sz' (see case 1).
 				quicksort(wData, sz);
-				printarray(wData, sz);
+
 
 				end_time = clock();		// end cpu timer
-
+				printarray(wData, sz);
 				cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
 				cout << endl << "(D)Sort ran for " << cpu_time_used << " secs.";
 
