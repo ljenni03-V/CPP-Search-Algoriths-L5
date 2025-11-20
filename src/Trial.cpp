@@ -56,8 +56,7 @@ int main() {
 						for (int i = 0; i<sz; ++i){
 							wData[i] = data[i];
 						}
-						printarray(data,sz);
-						printarray(wData, sz);
+						printarray(wData,sz);
 					}
 
 
@@ -67,10 +66,8 @@ int main() {
 					InsertionSort(wData, sz);
 			        //  Note that 'wData' is of size 'sz' (see case 1).
 
-
-
 					end_time = clock();		// end cpu timer
-
+					printarray(wData,sz);
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
 					cout << endl << "(A)Sort ran for " << cpu_time_used << " secs.";
 
@@ -101,7 +98,6 @@ int main() {
 					wData[i] = data[i];
 					}
 				printarray(data,sz);
-				printarray(wData, sz);
 					}
 
 					//begin_time = clock();   // start cpu timer

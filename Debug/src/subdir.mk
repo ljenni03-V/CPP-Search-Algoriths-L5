@@ -4,25 +4,25 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CC_SRCS += \
-../src/ASORT.cc \
-../src/BSORT.cc \
-../src/Helper_Func.cc 
+../src/CountingSort.cc \
+../src/Helper_Func.cc \
+../src/InsertionSort.cc 
 
 CPP_SRCS += \
 ../src/Trial.cpp 
 
 CC_DEPS += \
-./src/ASORT.d \
-./src/BSORT.d \
-./src/Helper_Func.d 
+./src/CountingSort.d \
+./src/Helper_Func.d \
+./src/InsertionSort.d 
 
 CPP_DEPS += \
 ./src/Trial.d 
 
 OBJS += \
-./src/ASORT.o \
-./src/BSORT.o \
+./src/CountingSort.o \
 ./src/Helper_Func.o \
+./src/InsertionSort.o \
 ./src/Trial.o 
 
 
@@ -45,7 +45,7 @@ src/%.o: ../src/%.cpp src/subdir.mk
 clean: clean-src
 
 clean-src:
-	-$(RM) ./src/ASORT.d ./src/ASORT.o ./src/BSORT.d ./src/BSORT.o ./src/Helper_Func.d ./src/Helper_Func.o ./src/Trial.d ./src/Trial.o
+	-$(RM) ./src/CountingSort.d ./src/CountingSort.o ./src/Helper_Func.d ./src/Helper_Func.o ./src/InsertionSort.d ./src/InsertionSort.o ./src/Trial.d ./src/Trial.o
 
 .PHONY: clean-src
 

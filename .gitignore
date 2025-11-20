@@ -54,3 +54,4 @@ Release/
 # === OS generated files ===
 .DS_Store
 Thumbs.db
+/Debug/
