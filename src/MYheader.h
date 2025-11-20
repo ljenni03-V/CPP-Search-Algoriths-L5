@@ -27,5 +27,7 @@ void    InsertionSort(long data[], int size);
 void    countingsort(long matr [], long Z);
 void bubblesort(long data[], long size);
 void quicksort(long data[], long size);
+void moveDown(long arr[], int size, int index);
+void heap (long data[], long w[], int size);
 
 #endif /* MYHEADER_H_ */

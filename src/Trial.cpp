@@ -15,7 +15,7 @@ using namespace std;
 int main() {
 
 	int		choice, sz;
-	long	data[21], wData[21];
+	long	data[MAXSIZE], wData[MAXSIZE];
 	double  begin_time, end_time, cpu_time_used;
 	string  ifilename, ofilename;
 
@@ -30,7 +30,7 @@ int main() {
                     // The function 'readfile' returns the size of the file that was read
 					// If the file could not be read, 'readfile' returns -1
 
-					ifilename = "INPUT5.txt";
+					ifilename = "lab5_input.txt";
 					sz = readfile(ifilename, data);
 
 					if (sz < 0)	 {
@@ -45,7 +45,7 @@ int main() {
 			case 2: // Sort function A
 
                     // First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
-						ifilename = "INPUT5.txt";
+						ifilename = "lab5_input.txt";
 						 sz = readfile(ifilename, data);
 						if (sz < 0)	 {
 							cerr << endl << "ERROR: Input File Not Found or File cannot be opened." <<endl;
@@ -71,7 +71,7 @@ int main() {
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
 					cout << endl << "(A)Sort ran for " << cpu_time_used << " secs.";
 
-					ofilename = "OUTPUT5.txt";
+					ofilename = "lab5_output.txt";
 					writefile(wData, sz, ofilename);
 
 					if (sz < 0)	 {
@@ -86,7 +86,7 @@ int main() {
 			case 3: // Sort function B
 
 			        // First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
-				ifilename = "INPUT5.txt";
+				ifilename = "lab5_input.txt";
 				sz = readfile(ifilename, data);
 				if (sz < 0)	 {
 					cerr << endl << "ERROR: Input File Not Found or File cannot be opened." <<endl;
@@ -115,7 +115,7 @@ int main() {
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
 					cout << endl << "(B)Sort ran for " << cpu_time_used << " secs.";
 
-					ofilename = "OUTPUT5.txt";
+					ofilename = "lab5_output.txt";
 					writefile(wData, sz, ofilename);
 
 					if (sz < 0)	 {
@@ -131,7 +131,7 @@ int main() {
 			case 4: // Sort function C- bubble sort
 
 						        // First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
-				ifilename = "INPUT5.txt";
+				ifilename = "lab5_input.txt";
 				sz = readfile(ifilename, data);
 				if (sz < 0)	 {
 					cerr << endl << "ERROR: Input File Not Found or File cannot be opened." <<endl;
@@ -161,7 +161,7 @@ int main() {
 				cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
 				cout << endl << "(C)Sort ran for " << cpu_time_used << " secs.";
 
-				ofilename = "OUTPUT5.txt";
+				ofilename = "lab5_output.txt";
 				writefile(wData, sz, ofilename);
 
 				if (sz < 0)	 {
@@ -175,7 +175,7 @@ int main() {
 			case 5: // Sort function D- quicksort
 
 								// First, copy the contents of the array 'data' to the working array 'wData'. Your program should sort 'wData' and not 'data'.
-				ifilename = "INPUT5.txt";
+				ifilename = "lab5_input.txt";
 				sz = readfile(ifilename, data);
 				if (sz < 0)	 {
 					cerr << endl << "ERROR: Input File Not Found or File cannot be opened." <<endl;
@@ -204,7 +204,7 @@ int main() {
 				cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
 				cout << endl << "(D)Sort ran for " << cpu_time_used << " secs.";
 
-				ofilename = "OUTPUT5.txt";
+				ofilename = "lab5_output.txt";
 				writefile(wData, sz, ofilename);
 
 				if (sz < 0)	 {
