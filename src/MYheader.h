@@ -25,7 +25,8 @@ void	swap(long& x, long& y);
 void    InsertionSort(long data[], int size);
 
 void    countingsort(long matr [], long Z);
-void bubblesort(long data[], long size);
-void quicksort(long data[], long size);
+void    bubblesort(long data[], long size);
+void    quicksort(long data[], long size);
+void selection(long data[], long w[], long size);
 
 #endif /* MYHEADER_H_ */
