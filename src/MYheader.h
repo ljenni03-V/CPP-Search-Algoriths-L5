@@ -25,13 +25,14 @@ void	swap(long& x, long& y);
 void    InsertionSort(long data[], int size);
 
 void    countingsort(long matr [], long Z);
-<<<<<<< HEAD
+
 void bubblesort(long data[], long size);
 void quicksort(long data[], long size);
-=======
+
 void    bubblesort(long data[], long size);
 void    quicksort(long data[], long size);
 void selection(long data[], long w[], long size);
->>>>>>> refs/remotes/origin/main
+void moveDown(long arr[], int size, int index);
+void heap(long data[], long w[], int size);
 
 #endif /* MYHEADER_H_ */
