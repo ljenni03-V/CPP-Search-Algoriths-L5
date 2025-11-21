@@ -32,7 +32,7 @@ int main() {
 
 					ifilename = "lab5_input.txt";
 					sz = readfile(ifilename, data);
-					sz= sz/2;
+					sz = sz/2;
 					if (sz < 0)	 {
 						 cerr << endl << "ERROR: Input File Not Found or File cannot be opened." <<endl;
 						 cerr << "       Please check that the file exists, its path, and try again!" << endl << endl;
@@ -96,7 +96,7 @@ int main() {
 					}
 				else {
 				for (int i = 0; i<sz; ++i){
-					wData[i] = data[i];
+					wData[i] = abs(data[i]);
 					}
 
 					}
