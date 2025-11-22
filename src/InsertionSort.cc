@@ -1,9 +1,9 @@
 #include <iostream>
 #include <fstream>
 #include "MYheader.h"
-// Your ASort function(s) goes here ..
+// Insertion Sort
 
-
+//void function of Insertion sort
 void InsertionSort(long data[], int n) {
 for (int i = 1,j; i < n; i++) {
 long tmp = data[i];
