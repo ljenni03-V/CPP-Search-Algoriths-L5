@@ -71,7 +71,7 @@ int main() {
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
 					cout << endl << "(A)Sort ran for " << cpu_time_used << " secs.";
 
-					ofilename = "lab5_output.txt";
+					ofilename = "lab5_Ins_output.txt";
 					writefile(wData, sz, ofilename);
 
 					if (sz < 0)	 {
@@ -116,7 +116,7 @@ int main() {
 					cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
 					cout << endl << "(B)Sort ran for " << cpu_time_used << " secs.";
 
-					ofilename = "lab5_output.txt";
+					ofilename = "lab5_Cou_output.txt";
 					writefile(wData, sz, ofilename);
 
 					if (sz < 0)	 {
@@ -163,7 +163,7 @@ int main() {
 				cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
 				cout << endl << "(C)Sort ran for " << cpu_time_used << " secs.";
 
-				ofilename = "lab5_output.txt";
+				ofilename = "lab5_Bub_output.txt";
 				writefile(wData, sz, ofilename);
 
 				if (sz < 0)	 {
@@ -207,7 +207,7 @@ int main() {
 				cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
 				cout << endl << "(D)Sort ran for " << cpu_time_used << " secs.";
 
-				ofilename = "lab5_output.txt";
+				ofilename = "lab5_Qui_output.txt";
 				writefile(wData, sz, ofilename);
 
 				if (sz < 0)	 {
@@ -251,7 +251,7 @@ int main() {
 				cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
 				cout << endl << "(D)Sort ran for " << cpu_time_used << " secs.";
 
-				ofilename = "lab5_output.txt";
+				ofilename = "lab5_Sel_output.txt";
 				writefile(wData, sz, ofilename);
 
 				if (sz < 0)	 {
@@ -295,7 +295,7 @@ int main() {
 							cpu_time_used = (end_time - begin_time) / CLOCKS_PER_SEC;
 							cout << endl << "(D)Sort ran for " << cpu_time_used << " secs.";
 
-							ofilename = "lab5_output.txt";
+							ofilename = "lab5_Hea_output.txt";
 							writefile(wData, sz, ofilename);
 
 							if (sz < 0)	 {
