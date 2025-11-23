@@ -1,3 +1,5 @@
+//author: James Vo
+
 #include "MYheader.h"
 
 template <class T>
